@@ -1,26 +1,26 @@
 body { 
-    background-color:#DDD; 
     font-size: 13px; 
-    color: #00182C; 
     margin-bottom:50px; 
     font-family: 'Poppins', helvetica;
+    color:#3F3F3F;
 }
 
 .header{
-    background-color: white;
+    background-color: #1c3f6d;
     margin: 0;
-    box-shadow: 1px 1px 8px #00182C;
+    box-shadow: 1px 1px 2px #1c3f6d;
     position: fixed;
     width:100%;
     z-index: 99;
+    color:white;
 }
 
 .header h1{
     margin:0;
     padding:10px 20px;
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: bolder;
-    font-style: oblique;
+    font-style: italic;
 }
 
 .header h2{
@@ -29,7 +29,7 @@ body {
     font-size: 2vh;
     padding-top:0;
     font-weight: bolder;
-    font-style: oblique;
+    font-style: italic;
 }
 
 .search{
@@ -39,13 +39,14 @@ body {
 }
 
 .search p{
-    font-size:2.5vh;
+    font-size:2vh;
     font-weight: bold;
 }
 
 .form{
     width:100%;
-    background-color: #00182C;
+    background-color: #f5f6f6;
+    box-shadow: 1px 1px 4px  #1c3f6d;
     border-radius: 5px;
     padding:2vh;
     display:flex;
@@ -54,15 +55,13 @@ body {
     flex-wrap:wrap;
 }
 
-.form label{
-    color:white;
-}
 
 .form input,select{
     padding:5px 15px;
     border-radius: 5px;
     border:0;
     margin-bottom:10px;
+    border:1px solid #1c3f6d;
 }
 
 .date,.pramotion,.member{
@@ -72,45 +71,56 @@ body {
 
 .button{
     padding:15px 50px;
-    background-color:orange;
-    border-radius: 5px;
+    background-color:#f5bf1d;
     cursor: pointer;
     border: 0;
     font-weight: bold;
     margin-bottom:5px;
+    border-radius: 5px;
+    color:#1c3f6d;
 }
 
 .button:hover {
-    opacity: 0.6;
+    color: #f5bf1d;
+    background-color:#1c3f6d;
     transition:.15s ease-in-out;
 }
 
 .deals{
     width:80%;
     margin:0 auto;
-    background-color:white;
     padding:1px 0;
 }
 
 .dealHeader{
     display:flex;
     justify-content: space-between;
-    margin:20px;
+    margin:20px 0;
+} 
+
+.dealHeader button{
+    padding:5px;
+}
+
+.dealHeader p{
+    margin-bottom: 0px;
+    font-size:0.8rem;
+    font-weight: bold;
 }
 
 .availability{
-    background-color: #00182C;
-    color:white;
-    border:0;
+    background-color:#f5f6f6;
+    border: 1px solid #f5bf1d;
     border-radius: 5px;
     font-weight: bold;
 }
 
 .dealItem{
-    background-color: rgb(232, 233, 233);
     display:flex;
-    border: 1px solid #00182C;
-    margin:20px;
+    border: 1px solid #1c3f6d;
+    background-color: #f5f6f6;
+    margin:20px 0;
+    border-radius: 5px;
 }
 
 .carousel{
@@ -137,22 +147,29 @@ body {
 }
 
 .dealtimeHeading h2{
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: bolder;
+    color:#1c3f6d;
+}
+
+.dealtimeHeading h4{
+    font-size: 2.3vh;
+    font-weight: bolder;
+    color:#1c3f6d;
 }
 
 .dealItemButton{
-    width:60%;
-    background-color: #00182C;
-    padding:10px;
+    background-color: #f5bf1d;
+    padding:5px 20px;
     border:0;
-    color:white;
+    color:#1c3f6d;
     border-radius: 5px;
-    align-self: center;
+    align-self: flex-end;
 }
 
 .dealItemButton:hover, .availability:hover{
-    background-color: #075085;
+    color: #f5bf1d;
+    background-color:#1c3f6d;
     transition:.15s ease-in-out;
 }
 
@@ -169,7 +186,17 @@ body {
     
     .dealitemdesc{
         flex:1;
+    }  
+    
+    .form input,select{
+        margin-right:5px;
     }   
+    
+    .dealtimeHeading h4{
+        font-size: 2vh;
+        font-weight: bolder;
+    }
+    
 }
 
 
@@ -210,8 +237,16 @@ body {
         padding:10px;
     }
 
-    .dealtimeHeading h2{
-        font-size: 3.5vh;
+    .dealHeader p{
+        margin-bottom: 1rem;
+    }
+
+    .form input,select{
+        margin-right:0px;
+    } 
+
+    .dealItemButton{
+        align-self:center;
     }
     
   }
